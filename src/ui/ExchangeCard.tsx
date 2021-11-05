@@ -9,9 +9,6 @@ export const ExchangeCard = () => {
     const result = useSelector<AppRootStateType,number>(state=>state.conversion.result)
     const currency = useSelector<AppRootStateType,string>(state=>state.conversion.convertValues.to)
     const dispatch = useDispatch()
-    const userLang = navigator.language || navigator.userAgent;
-    console.log(userLang);
-
     const exchangePattern = /^[0-9]{1,9}\s[A-Z]{3}\s[A-Z]{2}\s[A-Z]{3}$/i
     let amount = /^[0-9]{1,9}/
     let from =/[A-Z]{3}/

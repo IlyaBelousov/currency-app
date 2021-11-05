@@ -9,7 +9,7 @@ import {BrowserRouter} from "react-router-dom";
 
 ReactDOM.render(
     <React.StrictMode>
-        <BrowserRouter basename={'/currency-app'}>
+        <BrowserRouter basename={'/currency-app/'}>
             <Provider store={store}>
                 <App/>
             </Provider>
