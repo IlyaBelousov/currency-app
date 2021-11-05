@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.module.css';
 import s from './App.module.css'
-import {AppBar, Box, Button, Container, LinearProgress, Toolbar, Typography} from "@mui/material";
+import {AppBar, Box, Button,LinearProgress, Toolbar, Typography} from "@mui/material";
 import {Routes, Route, Link} from "react-router-dom";
 import {ExchangeCard} from "./ui/ExchangeCard";
 import {LatestRates} from "./ui/LatestRates";
@@ -34,7 +34,7 @@ export function App() {
             <LinearProgress/>
         </Box>}
         <Routes>
-            <Route path={'/currency-app'} element={<ExchangeCard/>}/>
+            <Route path={'/'} element={<ExchangeCard/>}/>
             <Route path={'/rates'} element={<LatestRates/>}/>
         </Routes>
         <ErrorSnackBar/>
