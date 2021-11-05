@@ -34,7 +34,7 @@ export function App() {
             <LinearProgress/>
         </Box>}
         <Routes>
-            <Route path={'/'} element={<ExchangeCard/>}/>
+            <Route path={'/currency-app'} element={<ExchangeCard/>}/>
             <Route path={'/rates'} element={<LatestRates/>}/>
         </Routes>
         <ErrorSnackBar/>
